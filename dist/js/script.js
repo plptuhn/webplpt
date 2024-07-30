@@ -21,4 +21,30 @@ bgSidebar.addEventListener("click", function() {
     this.classList.remove("bg-active");
 });
 
+/* Still anyone can inspect elements by F12 key. View page source by 
+Ctrl + U key. Copy by ctrl + C. Paste by ctrl + v key. Let's prevent these */
+
+document.onkeydown = e => {
+  //Prevent F12 key
+  if(e.key == "F12") {
+    alert("Don't try to inspect element")
+    return false
+  }
+  //Prevent showing page source by ctrl +  U
+  if(e.ctrlKey && e.key == "u") {
+    alert("Don't try to view page sources")
+    return false
+  }
+  //Prevent copy anything from the page
+  if(e.ctrlKey && e.key == "c") {
+    alert("Don't try to copy page element")
+    return false
+  }
+  //Prevent paste anything from other sources
+  if(e.ctrlKey && e.key == "v") {
+    alert("Don't try to paste anything to page")
+    return false
+  }
+}
+
 
