@@ -1087,8 +1087,22 @@ footer {
         margin-left: 0;
     }
 
+    header .content2 .hero2 h1,
+    header .content3 .hero3 h1,
+    header .content4 .hero4 h1,
+    header .content5 .hero5 h1,
+    header .content6 .hero6 h1,
+    header .content7 .hero7 h1,
+    header .content8 .hero8 h1,
+    header .content9 .hero9 h1,
+    header .content10 .hero10 h1,
+    header .content11 .hero11 h1,
+    header .content12 .hero12 h1 {
+        margin-top: 1.7rem;
+    }
+
     header .content2 .hero2 p {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     header .sidebar {
